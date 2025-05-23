@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uindons Xispê</title>
+    <link rel="shortcut icon" href="img/logoxp.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="area-trabalho">
+        <div class="atalhos" id="atalhos-container">
+            <!-- Atalhos serão carregados dinamicamente -->
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <div class="start-button" id="botao-iniciar">
+            <img src="img/logoxp.png" alt="Start" class="start-icon">
+            <span>Iniciar</span>
+        </div>
+        <div class="taskbar-items" id="taskbar-items">
+            <!-- Itens da taskbar serão carregados dinamicamente -->
+        </div>
+        <div class="system-tray">
+            <div class="clock">00:00</div>
+            <div class="user-info" id="user-info"></div>
+            <button id="logout-btn" class="logout-btn">Sair</button>
+        </div>
+    </div>
+
+    <div id="modal-documento" class="modal">
+        <div class="modal-conteudo">
+            <div class="modal-header">
+                <span class="modal-title">Documento - Bloco de Notas</span>
+                <div class="modal-buttons">
+                    <button class="modal-close">X</button>
+                </div>
+            </div>
+            <textarea id="texto-documento" class="xp-textarea"></textarea>
+            <div class="modal-actions">
+                <button id="salvar-documento">Salvar</button>
+                <input type="text" id="nome-documento" placeholder="Nome do arquivo" class="xp-input">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-atalho" class="modal">
+        <div class="modal-conteudo">
+            <div class="modal-header">
+                <span class="modal-title">Novo Atalho</span>
+                <div class="modal-buttons">
+                    <button class="modal-close">X</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="atalho-titulo">Título:</label>
+                    <input type="text" id="atalho-titulo" class="xp-input">
+                </div>
+                <div class="form-group">
+                    <label for="atalho-icone">Ícone:</label>
+                    <select id="atalho-icone" class="xp-input">
+                        <option value="lixeira.webp">Lixeira</option>
+                        <option value="documento.png">Documento</option>
+                        <option value="meucomputador.webp">Meu Computador</option>
+                        <option value="meus-documentos.png">Meus Documentos</option>
+                        <option value="internet-explorer.webp">Internet Explorer</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="salvar-atalho">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
