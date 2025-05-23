@@ -40,7 +40,7 @@ app.get('/login.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/login.html'));
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5091;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
