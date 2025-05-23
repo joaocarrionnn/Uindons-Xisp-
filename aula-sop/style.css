@@ -8,7 +8,7 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: 'Tahoma', 'Microsoft Sans Serif', sans-serif;
-    background-image: url('wxp.jpg');
+    background-image: url('img/wxp.jpg');
     background-size: cover;
     background-position: center;
 }
